@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/placeholder">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:id="@+id/nav_host_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
+    <fragment android:id="@+id/placeholder" />
+    <fragment
+        android:id="@+id/entrenadorFragment"
+        android:name="com.example.entrenador.entrenadorFragment"
+        android:label="fragment_entrenador"
+        tools:layout="@layout/fragment_entrenador" />
+    <fragment
+        android:id="@+id/entrenadorFragment2"
+        android:name="com.example.entrenador.EntrenadorFragment"
+        android:label="fragment_entrenador2"
+        tools:layout="@layout/fragment_entrenador2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
